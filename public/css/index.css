@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(/fonts/wartext.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+}
+
+#loadtext{
+    font-size: 20pt;
+    color: green;
+    font-family: CustomFont;
+}
+
+#userin{
+    font-size: 20pt;
+    color: green;
+    font-family: CustomFont;
+}
+
+#userInput{
+    font-size: 20pt;
+    color: green;
+    font-family: CustomFont;
+    background-color: black;
+    border-color: black;
+    border: none;
+    outline: none;
+}
+
+#userInput:focus{
+    border: none;
+}
+
+.swal2-popup {
+    font-family: CustomFont;
+    background-color: black;
+    color: green;
+    border: none; /* Remove the border */
+}
+
+.swal2-title {
+    font-size: 20pt;
+    color: green;
+}
+
+.swal2-content {
+    font-size: 20pt;
+    color: green;
+}
+
+.swal2-input {
+    font-size: 20pt;
+    color: green;
+    background-color: black;
+    border: none; /* Remove the border */
+    outline: none;
+}
+
+.swal2-confirm, .swal2-cancel {
+    font-size: 20pt;
+    color: white; /* Change the text color to white */
+    background-color: green; /* Change the button color to green */
+}
+
+
+

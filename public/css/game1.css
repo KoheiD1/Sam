@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3c3c3c;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cell {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: #ccc;
+    border: 1px solid #666;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden; /* Ensure X and O stay within the cell */
+    position: relative;
+}
+
+.cell::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.x::before {
+    content: 'X';
+    color: #00f;
+}
+
+.cell.o::before {
+    content: 'O';
+    color: #f00;
+}
+
+.draw-overlay {
+    background-color: green;
+}
+
+.gray-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    position: relative;
+}
+
+.blue-overlay,
+.red-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.blue-overlay {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.red-overlay {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.btn-info {
+    background-color: #6e0de4;
+}
+
+.info {
+    width: 470px;
+    height: 470px;
+    display: none;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info p {
+    padding: 5px 0;
+}
+
+.info-close {
+    background-color: #4CAF50;
+    margin-left: 44%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.game-overlay {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 10;
+    left: 10;
+    z-index: 10;
+    display: none;
+}
+
+.player1 {
+    background-color: rgb(9, 137, 7);
+}
+
+.player2 {
+    background-color: rgba(50, 110, 195, 0);
+}
+
+.red {
+    background-color: #f00;
+}
+
+.blue {
+    background-color: #00f;
+}
+
+#container {
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container.active {
+    width: 90%;
+}
+
+#game {
+    width: 470px;
+    height: 470px;
+    padding: 10px;
+    background-color: #999;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#winner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    z-index: 11;
+}
+#navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.menu-3 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 20pt;
+}
+
+.menu-3 li {
+    width: 150px;
+    height: 50px;
+    transition: background-position-x 0.6s linear;
+    text-align: center;
+}
+
+.menu-3 li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.45s;
+}
+
+.menu-3 li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    -webkit-animation: line 1s;
+    animation: line 1s;
+}
+
+.menu-3 li:hover a {
+    color: #4fd7d9;
+}
+
+.menu-3 li:not(:last-child) {
+    margin-right: 30px;
+}
+
+@-webkit-keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
