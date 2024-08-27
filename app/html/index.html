@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <script type = "text/javascript" src = "/js/loading.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-<div><p id = "loadtext"></p></div>
-<label id = "userin" for="userInput"></label>
-<input type="text" id="userInput">
+<body style="background-color: #EBEBE8;">
+    
+    <div class="container my-4">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg matcha-color" style="color: #31352E;">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Samuel Sjoden</h1>
+            <p class="lead">Hi, my name is Samuel Sjoden</p>
+          </div>
+          <div class="col-lg-5 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3 img-fluid" src="/img/headshot.jpg" alt="" style="width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+      
+      <hr class="custom-hr">
+    
+    <div class="container my-4 olive-color" >
+        <h1 class="display-2 fw-bold lh-1">Projects</h1>
+        <div class="container my-4 mt-5">
+            <h2 class="display-6 lh-1 fw-normal">The PCB Guys</h2>
+            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
+            <a href="#" class="btn-custom" id ="PCB">Click Me</a>
+        </div>
+        
+        <div class="container my-4 mt-5">
+            <h2 class="display-6 lh-1 fw-normal">Leather Crowler Crone</h2>
+            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
+            <a href="#" class="btn-custom" id ="LCC">Click Me</a>
+        </div>
 
-<script>
-loadingAnimation()
-</script>
+        <div class="container my-4 mt-5">
+            <h2 class="display-6 lh-1 fw-normal">Project Smokeshow</h2>
+            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
+            <a href="#" class="btn-custom" id ="Smokeshow">Click Me</a>
+        </div>
+    </div>
+
+    <hr class="custom-hr">
+    
+    <div class="container my-4 olive-color">
+        <h1 class="display-2 fw-bold lh-1">Industry Projects</h1>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-6">
+                <img src="/img/rockwool.svg" alt="Rockwool Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 ">
+                <h2>Maintenance Engineer</h2>
+                <p>
+                    This is a description of the project. It gives an overview of what the project is about and its key features. 
+                    You can add more details here as needed.
+                </p>
+            </div>
+        </div>
+
+        <div class ="row mt-5">
+            <div class="col-md-6">
+                <h2>Rockwool Mission Statement</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos unde, illum qui nobis eaque quo velit totam ea nam libero natus, vel itaque ratione aperiam deleniti perferendis cum fugit quas.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/img/Rockwoolf.jpg" alt="Rockwool Image" class="img-fluid">
+            </div>
+        </div>
+
+        <div class ="row mt-5">
+            <div class="col-md-6">
+                <h2>Motors Control Systems</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos unde, illum qui nobis eaque quo velit totam ea nam libero natus, vel itaque ratione aperiam deleniti perferendis cum fugit quas.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleCaptions" class="carousel slide mt-5">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/headshot.jpg" class="d-block w-100" alt="Image 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First Slide</h5>
+                                <p>Description for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Rockwoolf.jpg" class="d-block w-100" alt="Image 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second Slide</h5>
+                                <p>Description for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/image3.jpg" class="d-block w-100" alt="Image 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third Slide</h5>
+                                <p>Description for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="custom-hr">
+    
+    <div class="container my-4 olive-color" >
+        <h1 class="display-2 fw-bold lh-1">Entrepreneurial Pursuits</h1>
+        <h2 class="display-6 lh-1 fw-normal mt-5">The Wave Calendar</h2>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="/img/rockwool.svg" alt="Rockwool Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                
+                <h2>Mission Statement</h2>
+                <p>
+                    This is a description of the project. It gives an overview of what the project is about and its key features. 
+                    You can add more details here as needed.
+                </p>
+            </div>
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2>Presentation</h2>
+                
+            </div>  
+
+            <div class="col-md-6">
+                <h2>Scope and Goal of the project</h2>
+                <p>
+                    This is a description of the project. It gives an overview of what the project is about and its key features. 
+                    You can add more details here as needed.
+                </p>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
 </html>
