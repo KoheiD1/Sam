@@ -17,7 +17,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #31352E;
+    color: black;
     background-color: #778A35; /* Green background */
     border: none;
     border-radius: 5px; /* Rounded corners */
@@ -41,22 +41,148 @@
     margin-right: 10px;
 }
 
-.carousel {
-    position: fixed;
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.8); 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Center modal content */
+.modal-content {
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    height: 80%; 
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1E2C4;
+}
+
+.video-container {
+    height: 50vh; /* Adjust height to about half the viewport height */
+    margin-bottom: 20px; /* Add some space below the video if needed */
+}
+.ratio-16x9 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ratio-16x9 iframe {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    z-index: 1050; /* Ensure it appears above other content */
-  }
+    border: 0;
+}
 
-  .carousel-inner {
-    height: 100%;
-  }
+.mySlides {
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-  .carousel-item img {
-    height: 100%;
-    object-fit: cover; /* Ensure images cover the container */
-  }
-  
+/* Slide Title */
+.slide-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Slide Description */
+.slide-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    max-width: 80%;
+}
+
+/* Slide Image */
+.mySlides img {
+    max-width: 100%;
+    max-height: 60%; 
+    object-fit: contain; 
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.next {
+    right: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 20px;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+

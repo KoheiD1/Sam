@@ -9,10 +9,12 @@
 </head>
 <body style="background-color: #EBEBE8;">
     
+    <!---This is where you can write your descriptions for the main page-->
     <div class="container my-4">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg matcha-color" style="color: #31352E;">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <h1 class="display-4 fw-bold lh-1">Samuel Sjoden</h1>
+            <!--This is where you can put your description-->
             <p class="lead">Hi, my name is Samuel Sjoden</p>
           </div>
           <div class="col-lg-5 p-0 overflow-hidden shadow-lg">
@@ -23,32 +25,218 @@
       
       <hr class="custom-hr">
     
-    <div class="container my-4 olive-color" >
-        <h1 class="display-2 fw-bold lh-1">Projects</h1>
-        <div class="container my-4 mt-5">
-            <h2 class="display-6 lh-1 fw-normal">The PCB Guys</h2>
-            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
-            <a href="#" class="btn-custom" id ="PCB">Click Me</a>
+      <div class="container my-4 olive-color">
+        <h1 class="display-2 fw-bold lh-1 mb-6 fade-in">Projects</h1>
+        <div class="row fade-in">
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-md-6 mt-5 fade-in">
+                        <div class="container">
+                            <div class="video-container">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/jFGvAOP0WkM" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 fade-in">
+                        <h2 class="display-6 lh-1 fw-normal">The PCB Guys</h2>
+                        <!-- Description for the PCB guys-->
+                        <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly...</p>
+                        <a class="btn-custom" id="PCB">Click Me</a>
+                    </div>
+                </div>
+            </div>
+            
+        
+        <div class="row fade-in">
+            <div class="container my-4 mt-5 col-md-6 fade-in">
+                <h2 class="display-6 lh-1 fw-normal">Leather Crowler Crane</h2>
+                 <!-- Description for the Leather Crowler Crane guys-->
+                <p class="lead">Leather Crowler Crone is a company that specializes in custom leather goods...</p>
+                <a class="btn-custom" id="LCC">Click Me</a>
+            </div>
+            <div class="col-md-6 mt-5 fade-in">
+                <div class="container">
+                    <div class="video-container">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/jFGvAOP0WkM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div class="container my-4 mt-5">
-            <h2 class="display-6 lh-1 fw-normal">Leather Crowler Crone</h2>
-            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
-            <a href="#" class="btn-custom" id ="LCC">Click Me</a>
+        <div class="row fade-in">
+            <div class="col-md-6 mt-5 fade-in">
+                <div class="container">
+                    <div class="video-container">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/jFGvAOP0WkM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-4 mt-5 col-md-6 fade-in">
+                <h2 class="display-6 lh-1 fw-normal">Project Smokeshow</h2>
+                 <!-- Description for Project Smokeshow guys-->
+                <p class="lead">Project Smokeshow is a cutting-edge project in the tech field...</p>
+                <a class="btn-custom" id="Smokeshow">Click Me</a>
+            </div>
         </div>
-
-        <div class="container my-4 mt-5">
-            <h2 class="display-6 lh-1 fw-normal">Project Smokeshow</h2>
-            <p class="lead">The PCB Guys is a company that I started with a friend of mine. We specialize in custom PCB design and assembly. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project. We have a team of engineers that can help you with your project. We also have a team of assemblers that can help you with your project.</p>
-            <a href="#" class="btn-custom" id ="Smokeshow">Click Me</a>
+    
+         <!--This is the PCB slideshow each slide has a title and a description-->
+        <div id="modalPCB" class="modal">
+            <span class="close-btn" id="closePCB">&times;</span>
+            <div class="modal-content" style="background-color: #EBEBE8;">
+                <div class="slideshow-container" >
+                    <div class="mySlides">
+                        <img src="/img/PCB_CostBenefit.png" alt="PCB Image 1" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_Ewaste.png" alt="PCB Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_GanttChart.png" alt="PCB Image 3" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_Graph.png" alt="PCB Image 4" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_LCA.png" alt="PCB Image 5" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_pic.png" alt="PCB Image 6" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/PCB_RiskMatrix.png" alt="PCB Image 7" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'PCB')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'PCB')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    
+       <!--This is the Leather Crowler Crane each slide has a title and a description-->
+        <div id="modalLCC" class="modal">
+            <span class="close-btn" id="closeLCC">&times;</span>
+            <div class="modal-content" style="background-color: #EBEBE8;">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="/img/Crane_Render.png" alt="LCC Image 1" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Crane_Render2.png" alt="LCC Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Crane_Render3.png" alt="LCC Image 3" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Crane_Render4.png" alt="LCC Image 4" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Crane_Render5.png" alt="LCC Image 5" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="\img\Solidworks_Organization.png" alt="LCC Image 5" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'LCC')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'LCC')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    
+        <!--This is the Project Smokeshow slideshow each slide has a title and a description-->
+        <div id="modalSmokeshow" class="modal">
+            <span class="close-btn" id="closeSmokeshow">&times;</span>
+            <div class="modal-content" style="background-color: #EBEBE8;">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="/img/3D Print.jpg" alt="Smokeshow Image 1" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/3D_Print2.jpg" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Design_Sketch.jpg" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Design_Project.png" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Design_Project2.png" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Design_Project3.png" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/Design_Project4.png" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/FirstMaskFull.jpg" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <div class="mySlides">
+                        <img src="/img/FirstMaskHalfRender.jpg" alt="Smokeshow Image 2" class="img-fluid">
+                        <h3 class="slide-title">Cost-Benefit Analysis</h3>
+                        <p class="slide-description">This slide shows the cost-benefit analysis of different PCB designs.</p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'Smokeshow')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'Smokeshow')">&#10095;</a>
+                </div>
+            </div>
         </div>
     </div>
+    
+    
 
     <hr class="custom-hr">
     
+    <!--This is all the Rockwool stuff-->
     <div class="container my-4 olive-color">
-        <h1 class="display-2 fw-bold lh-1">Industry Projects</h1>
-        <div class="row align-items-center mt-5">
+        <h1 class="display-2 fw-bold lh-1 fade-in">Industry Projects</h1>
+        <div class="row align-items-center mt-5 fade-in">
             <div class="col-md-6">
                 <img src="/img/rockwool.svg" alt="Rockwool Image" class="img-fluid">
             </div>
@@ -61,7 +249,7 @@
             </div>
         </div>
 
-        <div class ="row mt-5">
+        <div class ="row mt-5 fade-in">
             <div class="col-md-6">
                 <h2>Rockwool Mission Statement</h2>
                 <p>
@@ -69,61 +257,27 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="/img/Rockwoolf.jpg" alt="Rockwool Image" class="img-fluid">
+                <img src="/img/Rockwool_factory.png" alt="Rockwool Image" class="img-fluid">
             </div>
         </div>
 
-        <div class ="row mt-5">
+        <div class ="row mt-5 fade-in">
             <div class="col-md-6">
                 <h2>Motors Control Systems</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos unde, illum qui nobis eaque quo velit totam ea nam libero natus, vel itaque ratione aperiam deleniti perferendis cum fugit quas.
                 </p>
             </div>
-            <div class="col-md-6">
-                <div id="carouselExampleCaptions" class="carousel slide mt-5">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/img/headshot.jpg" class="d-block w-100" alt="Image 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First Slide</h5>
-                                <p>Description for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/img/Rockwoolf.jpg" class="d-block w-100" alt="Image 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second Slide</h5>
-                                <p>Description for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/img/image3.jpg" class="d-block w-100" alt="Image 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third Slide</h5>
-                                <p>Description for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+            
     </div>
 
     <hr class="custom-hr">
     
+    <!--This is the Entrepreneurial Pursuits each slide has a title and a description-->
     <div class="container my-4 olive-color" >
-        <h1 class="display-2 fw-bold lh-1">Entrepreneurial Pursuits</h1>
-        <h2 class="display-6 lh-1 fw-normal mt-5">The Wave Calendar</h2>
-        <div class="row mt-5">
+        <h1 class="display-2 fw-bold lh-1 fade-in">Entrepreneurial Pursuits</h1>
+        <h2 class="display-6 lh-1 fw-normal mt-5 fade-in">The Wave Calendar</h2>
+        <div class="row mt-5 fade-in">
             <div class="col-md-6">
                 <img src="/img/rockwool.svg" alt="Rockwool Image" class="img-fluid">
             </div>
@@ -137,11 +291,7 @@
             </div>
             
         </div>
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <h2>Presentation</h2>
-                
-            </div>  
+        <div class="row mt-5 fade-in">
 
             <div class="col-md-6">
                 <h2>Scope and Goal of the project</h2>
@@ -152,8 +302,64 @@
             </div>
         </div>
     </div>
+</div>  
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modals = document.querySelectorAll('.modal');
+        const closeBtns = document.querySelectorAll('.close-btn');
+        const openBtns = document.querySelectorAll('.btn-custom');
+    
+        openBtns.forEach((btn) => {
+            btn.addEventListener('click', function() {
+                const modalId = this.id;
+                document.getElementById(`modal${modalId}`).style.display = "block";
+                showSlides(1, modalId); 
+            });
+        });
+    
+        closeBtns.forEach((btn) => {
+            btn.addEventListener('click', function() {
+                const modalId = this.id.replace('close', '');
+                document.getElementById(`modal${modalId}`).style.display = "none";
+            });
+        });
+    
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        });
+    
+      
+        const slideIndices = {
+            PCB: 1,
+            LCC: 1,
+            Smokeshow: 1
+        };
+    
+        window.plusSlides = function(n, modalId) {
+            showSlides(slideIndices[modalId] += n, modalId);
+        }
+    
+        function showSlides(n, modalId) {
+            const slides = document.querySelectorAll(`#modal${modalId} .mySlides`);
+    
+            if (n > slides.length) { slideIndices[modalId] = 1; }
+            if (n < 1) { slideIndices[modalId] = slides.length; }
+    
+            slides.forEach((slide) => slide.style.display = "none");
+            slides[slideIndices[modalId] - 1].style.display = "block";
+        }
+    
+        
+        Object.keys(slideIndices).forEach((key) => showSlides(slideIndices[key], key));
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/js/index.js"></script>
 </html>
